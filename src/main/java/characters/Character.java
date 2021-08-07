@@ -4,7 +4,7 @@ public class Character {
     String name;
     int stars;
     String vision;
-    String weapon;
+    String weapontype;
     int level;
     String image;
 
@@ -18,7 +18,7 @@ public class Character {
     double er[];
      */
 
-    //boolean weapon;
+    boolean weapon;
     boolean flower;
     boolean feather;
     boolean sands;
@@ -41,7 +41,25 @@ public class Character {
 
     String notes;
 
+    public Character(String name, int stars, String vision, String weapontype, String image){
+        setName(name);
+        setStars(stars);
+        setVision(vision);
+        setWeaponType(weapontype);
+        setLevel(1);
+        setImage(image);
 
+        initializeToDo();
+    }
+
+    public void initializeToDo(){
+        setWeapon(false);
+        setFlower(false);
+        setFeather(false);
+        setSands(false);
+        setGoblet(false);
+        setCirclet(false);
+    }
 
     public String getName() {
         return name;
@@ -67,12 +85,12 @@ public class Character {
         this.vision = vision;
     }
 
-    public String getWeapon() {
-        return weapon;
+    public String getWeaponType() {
+        return weapontype;
     }
 
-    public void setWeapon(String weapon) {
-        this.weapon = weapon;
+    public void setWeaponType(String weapontype) {
+        this.weapontype = weapontype;
     }
 
     public int getLevel() {
@@ -89,6 +107,14 @@ public class Character {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public boolean isWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(boolean weapon) {
+        this.weapon = weapon;
     }
 
     public boolean isFlower() {

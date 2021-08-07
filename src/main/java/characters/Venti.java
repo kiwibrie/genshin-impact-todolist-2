@@ -3,18 +3,7 @@ package main.java.characters;
 public class Venti extends Character {
 
     public Venti() {
-        setName("Venti");
-        setStars(5);
-        setVision("Anemo");
-        setWeapon("Bow");
-        setLevel(1);
-        //todo setImage("Venti.png");
-
-        setFlower(false);
-        setFeather(false);
-        setSands(false);
-        setGoblet(false);
-        setCirclet(false);
+        super("Venti", 5, "anemo", "bow", "");
 
         setAttackName("Divine Marksmanship");
         setAttackDesc("""
@@ -26,11 +15,14 @@ public class Venti extends Character {
         setSkillName("Skyward Sonnet");
         setSkillDesc("""
                 Press: Summons a Wind Domain at the opponent's location, dealing AoE Anemo DMG and launching opponents into the air.
+                
                 Hold: Summons an even larger Wind Domain with Venti as the epicenter, dealing AoE Anemo DMG and launching affected opponents into the air. After unleashing the Hold version of this ability, Venti rides the wind into the air.
+                
                 Opponents hit by Skyward Sonnet will fall to the ground slowly.""");
         setBurstName("Wind's Grand Ode");
         setBurstDesc("""
                 Fires off an arrow made of countless coalesced winds, creating a huge Stormeye that sucks in objects and opponents and deals continuous Anemo DMG.
+                
                 Elemental Absorption: If the Stormeye comes into contact with Hydro/Pyro/Cryo/Electro elements, it will deal additional elemental DMG of that type.
                 Elemental Absorption may only occur once per use.""");
 
