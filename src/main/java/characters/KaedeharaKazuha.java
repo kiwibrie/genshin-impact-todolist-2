@@ -5,6 +5,14 @@ public class KaedeharaKazuha extends Character {
     public KaedeharaKazuha() {
         super("Kaedehara Kazuha", 5, "anemo", "sword", "");
 
+        setHP(1039, 2695, 5366, 5902, 8659, 10213, 11777, 13348);
+        setATK(23, 60, 119, 153, 192, 227, 262, 297);
+        setDEF(63, 163, 324, 468, 523, 617, 712, 807);
+        setAscensionStat("Elemental Mastery");
+
+        setAscensionMaterials("Vayuda Turquoise", "Sea Ganoderma", "Marionette Core", "Insignia");
+        setTalentMaterials("Diligence", "Insignia", "Gilded Scale");
+
         setAttackName("Garyuu Bladework");
         setAttackDesc("""
                 Normal Attack: Perform up to 5 rapid strikes.

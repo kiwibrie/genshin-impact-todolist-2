@@ -5,6 +5,14 @@ public class Keqing extends Character {
     public Keqing(){
         super("Keqing", 5, "electro", "sword", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Yunlai Swordsmanship");
         setAttackDesc("");
         setSkillName("Stellar Restoration");
@@ -21,5 +29,5 @@ public class Keqing extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

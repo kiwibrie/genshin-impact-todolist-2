@@ -5,6 +5,14 @@ public class Zhongli extends Character {
     public Zhongli(){
         super("Zhongli", 5, "geo", "polearm", "");
 
+        setHP(1144, 2967, 5908, 7599, 9533, 11243, 12965, 14695);
+        setATK(20, 51, 101, 130, 163, 192, 222, 251);
+        setDEF(57, 149, 297, 382, 479, 564, 651, 738);
+        setAscensionStat("Geo DMG Bonus");
+
+        setAscensionMaterials("Prithiva Topaz", "Cor Lapis", "Basalt Pillar", "Slime");
+        setTalentMaterials("Gold", "Slime", "Tusk of Monoceros Caeli");
+
         setAttackName("Rain of Stone");
         setAttackDesc("""
                 Normal Attack: Performs up to 6 rapid strikes.

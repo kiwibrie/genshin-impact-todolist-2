@@ -5,6 +5,14 @@ public class Beidou extends Character {
     public Beidou(){
         super("Beidou", 4, "electro", "claymore", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Oceanborne");
         setAttackDesc("");
         setSkillName("Tidecaller");
@@ -21,5 +29,5 @@ public class Beidou extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

@@ -5,6 +5,14 @@ public class Xiao extends Character {
     public Xiao() {
         super("Xiao", 5, "anemo", "polearm", "");
 
+        setHP(991, 2572, 5120, 6586, 8262, 9744, 11236, 12736);
+        setATK(27, 71, 141, 181, 227, 267, 308, 349);
+        setDEF(62, 161, 321, 413, 519, 612, 705, 799);
+        setAscensionStat("Crit Rate");
+
+        setAscensionMaterials("Vayuda Turquoise", "Qingxin", "Juvenile Jade", "Slime");
+        setTalentMaterials("Prosperity", "Slime", "Shadow of the Warrior");
+
         setAttackName("Whirlwind Thrust");
         setAttackDesc("");
         setSkillName("Lemniscatic Wind Cycling");

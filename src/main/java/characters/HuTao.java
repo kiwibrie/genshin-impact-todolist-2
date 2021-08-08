@@ -5,6 +5,14 @@ public class HuTao extends Character {
     public HuTao(){
         super("Hu Tao", 5, "pyro", "polearm", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Secret Spear of Wangsheng");
         setAttackDesc("");
         setSkillName("Guide to Afterlife");
@@ -21,5 +29,5 @@ public class HuTao extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

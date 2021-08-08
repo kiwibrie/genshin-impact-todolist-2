@@ -5,6 +5,14 @@ public class Venti extends Character {
     public Venti() {
         super("Venti", 5, "anemo", "bow", "");
 
+        setHP(820, 2127, 4234, 5446, 6832, 8058, 9292, 10531);
+        setATK(20, 53, 106, 136, 171, 201, 232, 263);
+        setDEF(52, 135, 269, 346, 434, 512, 590, 669);
+        setAscensionStat("Energy Recharge");
+
+        setAscensionMaterials("Vayuda Turquoise", "Cecilia", "Hurricane Seed", "Slime");
+        setTalentMaterials("Ballad", "Slime", "Tail of Boreas");
+
         setAttackName("Divine Marksmanship");
         setAttackDesc("""
                 Normal Attack: Perform up to 6 consecutive shots with a bow.

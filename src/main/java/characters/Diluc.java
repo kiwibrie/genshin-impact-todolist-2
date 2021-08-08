@@ -5,6 +5,14 @@ public class Diluc extends Character {
     public Diluc(){
         super("Diluc", 5, "pyro", "claymore", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Tempered Sword");
         setAttackDesc("");
         setSkillName("Searing Onslaught");
@@ -21,5 +29,5 @@ public class Diluc extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

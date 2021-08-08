@@ -8,15 +8,19 @@ public class Character {
     int level;
     String image;
 
-    /*
-    int hp[];
-    int atk[];
-    int def[];
-    int em[];
-    double cr[];
-    double cd[];
-    double er[];
-     */
+    int[] hp;
+    int[] atk;
+    int[] def;
+    String ascensionstat;
+
+    String ascmatgem;
+    String ascmatboss;
+    String ascmatspecialty;
+    String ascmatcommon;
+
+    String talmattalent;
+    String talmatcommon;
+    String talmatboss;
 
     boolean weapon;
     boolean flower;
@@ -61,6 +65,50 @@ public class Character {
         setCirclet(false);
     }
 
+    public void setAscensionMaterials(String gem, String specialty, String boss, String common){
+        setAscensionGem(gem);
+        setAscensionSpecialty(specialty);
+        setAscensionBoss(boss);
+        setAscensionCommon(common);
+    }
+
+    public void setTalentMaterials(String talent, String common, String boss){
+        setTalentTalent(talent);
+        setTalentCommon(common);
+        setTalentBoss(boss);
+    }
+
+    public int[] getHP(){
+        return hp;
+    }
+
+    public void setHP(int lvl1, int lvl20, int lvl40, int lvl50, int lvl60, int lvl70, int lvl80, int lvl90){
+        hp = new int[]{lvl1, lvl20, lvl40, lvl50, lvl60, lvl70, lvl80, lvl90};
+    }
+
+    public int[] getATK(){
+        return atk;
+    }
+
+    public void setATK(int lvl1, int lvl20, int lvl40, int lvl50, int lvl60, int lvl70, int lvl80, int lvl90){
+        atk = new int[]{lvl1, lvl20, lvl40, lvl50, lvl60, lvl70, lvl80, lvl90};
+    }
+
+    public int[] getDEF(){
+        return def;
+    }
+
+    public void setDEF(int lvl1, int lvl20, int lvl40, int lvl50, int lvl60, int lvl70, int lvl80, int lvl90){
+        def = new int[]{lvl1, lvl20, lvl40, lvl50, lvl60, lvl70, lvl80, lvl90};
+    }
+
+    public String getAscensionStat(){
+        return ascensionstat;
+    }
+    public void setAscensionStat(String stat){
+        ascensionstat = stat;
+    }
+
     public String getName() {
         return name;
     }
@@ -82,7 +130,11 @@ public class Character {
     }
 
     public void setVision(String vision) {
-        this.vision = vision;
+        if(vision.equals("anemo") || vision.equals("pyro") || vision.equals("hydro")
+                || vision.equals("cryo") || vision.equals("dendro")
+                || vision.equals("electro") || vision.equals("geo")){
+            this.vision = vision;
+        }
     }
 
     public String getWeaponType() {
@@ -90,7 +142,11 @@ public class Character {
     }
 
     public void setWeaponType(String weapontype) {
-        this.weapontype = weapontype;
+        if(weapontype.equals("sword") || weapontype.equals("bow")
+                || weapontype.equals("catalyst") || weapontype.equals("claymore")
+                || weapontype.equals("polearm")){
+            this.weapontype = weapontype;
+        }
     }
 
     public int getLevel() {
@@ -259,5 +315,61 @@ public class Character {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public String getAscensionGem(){
+        return ascmatgem;
+    }
+
+    public void setAscensionGem(String material){
+        ascmatgem = material;
+    }
+
+    public String getAscensionSpecialty(){
+        return ascmatspecialty;
+    }
+
+    public void setAscensionSpecialty(String material){
+        ascmatspecialty = material;
+    }
+
+    public String getAscensionBoss(){
+        return ascmatboss;
+    }
+
+    public void setAscensionBoss(String material){
+        ascmatboss = material;
+    }
+
+    public String getAscensionCommon(){
+        return ascmatcommon;
+    }
+
+    public void setAscensionCommon(String material){
+        ascmatcommon = material;
+    }
+
+    public String getTalentCommon(){
+        return talmatcommon;
+    }
+
+    public void setTalentCommon(String material){
+        talmatcommon = material;
+    }
+
+    public String getTalentBoss(){
+        return talmatboss;
+    }
+
+    public void setTalentBoss(String material){
+        talmatboss = material;
+    }
+
+    public String getTalentTalent(){
+        return talmattalent;
+    }
+
+    public void setTalentTalent(String material){
+        talmattalent = material;
     }
 }

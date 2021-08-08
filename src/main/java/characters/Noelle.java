@@ -5,6 +5,14 @@ public class Noelle extends Character {
     public Noelle(){
         super("Noelle", 4, "geo", "claymore", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Favonius Bladework - Maid");
         setAttackDesc("");
         setSkillName("Breastplate");
@@ -21,5 +29,5 @@ public class Noelle extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

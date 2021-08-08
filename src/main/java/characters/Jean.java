@@ -5,6 +5,14 @@ public class Jean extends Character {
     public Jean(){
         super("Jean", 5, "anemo", "sword", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Favonius Bladework");
         setAttackDesc("");
         setSkillName("Gale Blade");
@@ -21,5 +29,5 @@ public class Jean extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }

@@ -5,6 +5,14 @@ public class Kaeya extends Character {
     public Kaeya(){
         super("Kaeya", 4, "cryo", "sword", "");
 
+        //setHP();
+        //setATK();
+        //setDEF();
+        setAscensionStat("");
+
+        setAscensionMaterials("", "", "", "");
+        setTalentMaterials("", "", "");
+
         setAttackName("Ceremonial Bladework");
         setAttackDesc("");
         setSkillName("Frostgnaw");
@@ -21,5 +29,5 @@ public class Kaeya extends Character {
 
         setNotes("");
     }
-    //todo descriptions
+    //todo descriptions, stats, materials
 }
