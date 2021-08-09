@@ -5,13 +5,13 @@ public class Jean extends Character {
     public Jean(){
         super("Jean", 5, "anemo", "sword", "");
 
-        //setHP();
-        //setATK();
-        //setDEF();
-        setAscensionStat("");
+        setHP(1144, 2967, 5908, 7599, 9533, 11243, 12965, 14695);
+        setATK(19, 48, 96, 124, 155, 183, 211, 239);
+        setDEF(60, 155, 309, 397, 499, 588, 678, 769);
+        setAscensionStat("Healing Bonus");
 
-        setAscensionMaterials("", "", "", "");
-        setTalentMaterials("", "", "");
+        setAscensionMaterials("Vayuda Turquoise", "Dandelion Seed", "Hurricane Seed", "Mask");
+        setTalentMaterials("Resistance", "Mask", "Dvalin's Plume");
 
         setAttackName("Favonius Bladework");
         setAttackDesc("");
@@ -29,5 +29,5 @@ public class Jean extends Character {
 
         setNotes("");
     }
-    //todo descriptions, stats, materials
+    //todo descriptions
 }

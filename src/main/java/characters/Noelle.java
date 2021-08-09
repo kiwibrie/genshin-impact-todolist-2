@@ -5,13 +5,13 @@ public class Noelle extends Character {
     public Noelle(){
         super("Noelle", 4, "geo", "claymore", "");
 
-        //setHP();
-        //setATK();
-        //setDEF();
-        setAscensionStat("");
+        setHP(1012, 2600, 5027, 6400, 7953, 9325, 10698, 12071);
+        setATK(16, 41, 80, 101, 126, 148, 169, 191);
+        setDEF(67, 172, 333, 423, 526, 617, 708, 799);
+        setAscensionStat("DEF");
 
-        setAscensionMaterials("", "", "", "");
-        setTalentMaterials("", "", "");
+        setAscensionMaterials("Prithiva Topaz", "Valberry", "Basalt Pillar", "Mask");
+        setTalentMaterials("Resistance", "Mask", "Dvalin's Claw");
 
         setAttackName("Favonius Bladework - Maid");
         setAttackDesc("");
@@ -29,5 +29,5 @@ public class Noelle extends Character {
 
         setNotes("");
     }
-    //todo descriptions, stats, materials
+    //todo descriptions
 }
