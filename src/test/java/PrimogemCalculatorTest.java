@@ -1,5 +1,6 @@
-package main.java;
+package test.java;
 
+import main.java.PrimogemCalculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +10,7 @@ class PrimogemCalculatorTest {
     @Test
     void getFates() {
         PrimogemCalculator pc = new PrimogemCalculator();
-        pc.fates = 90;
+        pc.setFates(90);
         assertEquals(90, pc.getFates());
     }
 
@@ -17,16 +18,16 @@ class PrimogemCalculatorTest {
     void setFates() {
         PrimogemCalculator pc = new PrimogemCalculator();
         pc.setFates(90);
-        assertEquals(90, pc.fates);
+        assertEquals(90, pc.getFates());
 
         pc.setFates(-100);
-        assertNotEquals(-100, pc.fates);
+        assertNotEquals(-100, pc.getFates());
     }
 
     @Test
     void getPrimos() {
         PrimogemCalculator pc = new PrimogemCalculator();
-        pc.primos = 90;
+        pc.setPrimos(90);
         assertEquals(90, pc.getPrimos());
     }
 
@@ -34,16 +35,16 @@ class PrimogemCalculatorTest {
     void setPrimos() {
         PrimogemCalculator pc = new PrimogemCalculator();
         pc.setPrimos(90);
-        assertEquals(90, pc.primos);
+        assertEquals(90, pc.getPrimos());
 
         pc.setPrimos(-100);
-        assertNotEquals(-100, pc.primos);
+        assertNotEquals(-100, pc.getPrimos());
     }
 
     @Test
     void getWishes() {
         PrimogemCalculator pc = new PrimogemCalculator();
-        pc.wishes = 90;
+        pc.setWishes(90);
         assertEquals(90, pc.getWishes());
     }
 
@@ -51,16 +52,16 @@ class PrimogemCalculatorTest {
     void setWishes() {
         PrimogemCalculator pc = new PrimogemCalculator();
         pc.setWishes(90);
-        assertEquals(90, pc.wishes);
+        assertEquals(90, pc.getWishes());
 
         pc.setWishes(-100);
-        assertNotEquals(-100, pc.wishes);
+        assertNotEquals(-100, pc.getWishes());
     }
 
     @Test
     void getPastWishes() {
         PrimogemCalculator pc = new PrimogemCalculator();
-        pc.pastwishes = 90;
+        pc.setPastWishes(90);
         assertEquals(90, pc.getPastWishes());
     }
 
@@ -68,10 +69,10 @@ class PrimogemCalculatorTest {
     void setPastWishes() {
         PrimogemCalculator pc = new PrimogemCalculator();
         pc.setPastWishes(90);
-        assertEquals(90, pc.pastwishes);
+        assertEquals(90, pc.getPastWishes());
 
         pc.setPastWishes(-100);
-        assertNotEquals(-100, pc.pastwishes);
+        assertNotEquals(-100, pc.getPastWishes());
     }
 
     @Test
