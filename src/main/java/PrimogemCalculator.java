@@ -1,17 +1,26 @@
 package main.java;
 
 public class PrimogemCalculator {
-    int fates = 0;
-    int primos = 0;
-    int wishes = 0;
-    int pastwishes = 0;
+    int fates;
+    int primos;
+    int wishes;
+    int pastwishes;
+
+    public PrimogemCalculator(){
+        setFates(0);
+        setPrimos(0);
+        setWishes(0);
+        setPastWishes(0);
+    }
 
     public int getFates() {
         return fates;
     }
 
     public void setFates(int fates) {
-        this.fates = fates;
+        if(fates >= 0){
+            this.fates = fates;
+        }
     }
 
     public int getPrimos() {
@@ -19,7 +28,9 @@ public class PrimogemCalculator {
     }
 
     public void setPrimos(int primos) {
-        this.primos = primos;
+        if(primos >= 0){
+            this.primos = primos;
+        }
     }
 
     public int getWishes() {
@@ -27,7 +38,9 @@ public class PrimogemCalculator {
     }
 
     public void setWishes(int wishes) {
-        this.wishes = wishes;
+        if(wishes >= 0){
+            this.wishes = wishes;
+        }
     }
 
     public int getPastWishes(){
@@ -35,7 +48,9 @@ public class PrimogemCalculator {
     }
 
     public void setPastWishes(int num){
-        pastwishes = num;
+        if(num >= 0){
+            pastwishes = num;
+        }
     }
 
     public void calcWishes(int fates, int primos){
@@ -46,6 +61,7 @@ public class PrimogemCalculator {
         setFates(0);
         setPrimos(0);
         setWishes(0);
+        setPastWishes(0);
     }
 
     public boolean willHitCharacterPity(){
