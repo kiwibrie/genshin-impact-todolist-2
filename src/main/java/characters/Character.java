@@ -45,6 +45,10 @@ public class Character {
 
     String notes;
 
+    public Character(String name){
+        setName(name);
+    }
+
     public Character(String name, int stars, String vision, String weapontype, String image){
         setName(name);
         setStars(stars);

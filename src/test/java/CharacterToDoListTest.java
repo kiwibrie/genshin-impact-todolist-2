@@ -2,6 +2,7 @@ package test.java;
 
 import main.java.CharacterToDoList;
 import main.java.characters.*;
+import main.java.characters.Character;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,11 +10,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CharacterToDoListTest {
 
     @Test
+    void getCharacterByInt(){
+        CharacterToDoList list = new CharacterToDoList();
+        Venti e = new Venti();
+        list.addCharacter(e);
+        assertEquals(e, list.getCharacterByInt(0));
+    }
+
+    @Test
+    void getCharacterByName(){
+        CharacterToDoList list = new CharacterToDoList();
+        Venti e = new Venti();
+        list.addCharacter(e);
+        assertEquals(e, list.getCharacterByName(e));
+    }
+
+    @Test
      void addCharacter() {
         CharacterToDoList list = new CharacterToDoList();
         Venti e = new Venti();
         list.addCharacter(e);
-        assertEquals("Venti", list.todolist.get(0).getName());
+        assertEquals("Venti", list.getCharacterByInt(0).getName());
     }
 
     @Test
@@ -25,7 +42,7 @@ class CharacterToDoListTest {
         list.addCharacter(zhongli);
 
         list.deleteCharacter(venti);
-        assertEquals("Zhongli", list.todolist.get(0).getName());
+        assertEquals("Zhongli", list.getCharacterByInt(0).getName());
     }
 
     @Test
@@ -35,11 +52,11 @@ class CharacterToDoListTest {
         list.addCharacter(new Zhongli());
         Jean e = new Jean();
         list.addCharacter(e);
-        assertEquals("Venti", list.todolist.get(0).getName());
+        assertEquals("Venti", list.getCharacterByInt(0).getName());
 
         list.insertPriority(e, 0);
-        assertEquals("Jean", list.todolist.get(0).getName());
-        assertEquals("Venti", list.todolist.get(1).getName());
-        assertEquals("Zhongli", list.todolist.get(2).getName());
+        assertEquals("Jean", list.getCharacterByInt(0).getName());
+        assertEquals("Venti", list.getCharacterByInt(1).getName());
+        assertEquals("Zhongli", list.getCharacterByInt(2).getName());
     }
 }
